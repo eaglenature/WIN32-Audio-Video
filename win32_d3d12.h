@@ -18,6 +18,12 @@
 #ifndef WIN32_D3D12_H
 #define WIN32_D3D12_H
 
+#if defined(__cplusplus)
+    #define DX12_IID(x) (__uuidof(x))
+#else
+    #define DX12_IID(x) (&IID_##x)
+#endif
+
 
 /* ID3D12Debug */
 

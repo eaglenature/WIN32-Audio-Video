@@ -17,6 +17,12 @@
 #ifndef WIN32_D3D11_H
 #define WIN32_D3D11_H
 
+#if defined(__cplusplus)
+    #define DX11_IID(x) (__uuidof(x))
+#else
+    #define DX11_IID(x) (&IID_##x)
+#endif
+
 
 /* ID3D11Device */
 

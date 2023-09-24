@@ -17,8 +17,8 @@
 #define WIN32_WASAPI_H
 
 #if defined(__cplusplus)
-    # define WASAPI_IID(x) (__uuidof(x))
-    # define WASAPI_CLSID(x) (__uuidof(x))
+    #define WASAPI_IID(x) (__uuidof(x))
+    #define WASAPI_CLSID(x) (__uuidof(x))
 #else
     #define WASAPI_IID(x) (&IID_##x)
     #define WASAPI_CLSID(x) (&CLSID_##x)
