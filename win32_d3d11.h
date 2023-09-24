@@ -5,7 +5,8 @@
     DO THIS:
         #include <d3d11.h>
         #include <dxgi1_6.h>
-        #include <d3dcompiler.h> 
+        #include <d3dcompiler.h>
+        #include "win32_dxgi.h"
         #include "win32_d3d11.h"
 
     LICENSE:
