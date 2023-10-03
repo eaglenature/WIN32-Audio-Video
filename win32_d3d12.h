@@ -18,6 +18,10 @@
 #ifndef WIN32_D3D12_H
 #define WIN32_D3D12_H
 
+#if !defined(__d3d12_h__)
+    #error Include d3d12.h before this file
+#endif
+
 #if defined(__cplusplus)
     #define DX12_IID(x) (__uuidof(x))
 #else

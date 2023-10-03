@@ -15,6 +15,16 @@
 #ifndef WIN32_DXGI_H
 #define WIN32_DXGI_H
 
+#if !defined(__dxgi_h__) || \
+    !defined(__dxgi1_2_h__) || \
+    !defined(__dxgi1_3_h__) || \
+    !defined(__dxgi1_4_h__) || \
+    !defined(__dxgi1_5_h__) || \
+    !defined(__dxgi1_6_h__)
+    #error Include dxgi.h or dxgi1_x.h before this file
+#endif
+
+
 /* IDXGIAdapter */
 
 #if defined(__cplusplus)

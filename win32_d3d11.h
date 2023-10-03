@@ -17,6 +17,10 @@
 #ifndef WIN32_D3D11_H
 #define WIN32_D3D11_H
 
+#if !defined(__d3d12_h__)
+    #error Include d3d11.h before this file
+#endif
+
 #if defined(__cplusplus)
     #define DX11_IID(x) (__uuidof(x))
 #else

@@ -12,9 +12,12 @@
 
 ------------------------------------------------------------------------------
 */
-
 #ifndef WIN32_WASAPI_H
 #define WIN32_WASAPI_H
+
+#if !defined(__mmdeviceapi_h__) && !defined(__audioclient_h__)
+    #error Include mmdeviceapi.h and audioclient.h before this file
+#endif
 
 #if defined(__cplusplus)
     #define WASAPI_IID(x) (__uuidof(x))
